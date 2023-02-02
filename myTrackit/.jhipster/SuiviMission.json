@@ -1,0 +1,48 @@
+{
+  "name": "SuiviMission",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "missionEumId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "problemeConstate",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "actionRecommandee",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "staffId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dateEcheance",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "statutRecomId",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "suivi_mission",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myTransfert"
+  ]
+}

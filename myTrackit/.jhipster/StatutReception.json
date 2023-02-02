@@ -1,0 +1,25 @@
+{
+  "name": "StatutReception",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "statutRecord",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "statut_reception",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit"
+  ]
+}

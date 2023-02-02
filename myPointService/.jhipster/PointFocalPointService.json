@@ -1,0 +1,42 @@
+{
+  "name": "PointFocalPointService",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "pointOsId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nomPf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fonctionPf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gsmPf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailPf",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "point_focal_point_service",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myPointService"
+  ]
+}

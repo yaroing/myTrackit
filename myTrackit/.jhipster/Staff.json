@@ -1,0 +1,50 @@
+{
+  "name": "Staff",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "staffFname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "staffLname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "staffTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "staffName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "staffEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "staffPhone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sectionId",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "staff",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myTransfert"
+  ]
+}

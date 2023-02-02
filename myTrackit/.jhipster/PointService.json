@@ -1,0 +1,65 @@
+{
+  "name": "PointService",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "partenaireId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nomPos",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "posLon",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "posLat",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "posContact",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "posGsm",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "monitoring",
+      "otherEntityRelationshipName": "pointService",
+      "relationshipName": "monitoring"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "requetePointService",
+      "otherEntityRelationshipName": "pointService",
+      "relationshipName": "requetePointService"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "stockPointService",
+      "otherEntityRelationshipName": "pointService",
+      "relationshipName": "stockPointService"
+    }
+  ],
+  "entityTableName": "point_service",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myPointService"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "name": "Transfert",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dateExp",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "sectionId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "staffId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "partenaireId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transporteurId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nomChauffeur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateRec",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "statutRecId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cphone",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "action",
+      "otherEntityRelationshipName": "transfert",
+      "relationshipName": "action"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "itemTransfert",
+      "otherEntityRelationshipName": "transfert",
+      "relationshipName": "itemTransfert"
+    }
+  ],
+  "entityTableName": "transfert",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myTransfert"
+  ]
+}
