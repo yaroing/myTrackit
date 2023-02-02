@@ -1,0 +1,249 @@
+{
+  "applications": ["myTrackit", "myCoreService"],
+  "changelogDate": "20230202162012",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "zrosts",
+  "fields": [
+    {
+      "fieldName": "roId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "roItem",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "roDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "roTdd",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "materialId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "matDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "delQty",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "value",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "storageLoc",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "whId",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "whDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "consId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "consName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "authPerson",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "soId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "poId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "delivery",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "grant",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "wbs",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pickStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "toNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trsptStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "waybId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "trsptrName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shipmtEd",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "gdsStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gdsDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "roSubitem",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "roType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "unit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "movingPrice",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "plantId",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "plantName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "storageLocp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dwhId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dwhDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shipParty",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trsptMeans",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "progOfficer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "soItems",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "poItems",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "trsptrId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gdsId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gdsItem",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "batch",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bbDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "planningDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "checkinDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "shipmentSdate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "loadingSdate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "loadingEdate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "ashipmentSdate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "shipmentCdate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "weight",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "volume",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "section",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "commodityGroup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "region",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Zrosts",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

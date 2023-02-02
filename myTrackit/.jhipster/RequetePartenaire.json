@@ -1,0 +1,42 @@
+{
+  "applications": ["myTrackit", "myPartenaire"],
+  "changelogDate": "20230202162412",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "requete_partenaire",
+  "fields": [
+    {
+      "fieldName": "requeteDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "fichierAtache",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "requeteObs",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "reqTraitee",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "RequetePartenaire",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "detailsRequete",
+      "otherEntityRelationshipName": "requetePartenaire",
+      "relationshipName": "detailsRequete",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

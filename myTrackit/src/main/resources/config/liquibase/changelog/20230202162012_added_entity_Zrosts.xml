@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity Zrosts.
+    -->
+    <changeSet id="20230202162012-1" author="jhipster">
+        <createTable tableName="zrosts">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="ro_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="ro_item" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="ro_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="ro_tdd" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="material_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mat_desc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="del_qty" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="value" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="storage_loc" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="wh_id" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="wh_desc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cons_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cons_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="auth_person" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="so_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="po_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="delivery" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="jhi_grant" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="wbs" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="pick_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="to_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trspt_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="wayb_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="trsptr_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="shipmt_ed" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="gds_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gds_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="ro_subitem" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="ro_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="unit" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="moving_price" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="plant_id" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="plant_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="storage_locp" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dwh_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dwh_desc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ship_party" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trspt_means" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="prog_officer" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="so_items" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="po_items" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="trsptr_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gds_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gds_item" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="batch" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="bb_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="planning_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="checkin_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="shipment_sdate" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="loading_sdate" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="loading_edate" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="ashipment_sdate" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="shipment_cdate" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="weight" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="volume" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="section" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="commodity_group" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="region" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+        <dropDefaultValue tableName="zrosts" columnName="ro_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="zrosts" columnName="ro_tdd" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="zrosts" columnName="shipmt_ed" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="zrosts" columnName="gds_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="zrosts" columnName="bb_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="zrosts" columnName="planning_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="zrosts" columnName="checkin_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="zrosts" columnName="shipment_sdate" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="zrosts" columnName="loading_sdate" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="zrosts" columnName="loading_edate" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="zrosts" columnName="ashipment_sdate" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="zrosts" columnName="shipment_cdate" columnDataType="${datetimeType}"/>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20230202162012-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/zrosts.csv"
+                  separator=";"
+                  tableName="zrosts"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="ro_id" type="numeric"/>
+            <column name="ro_item" type="numeric"/>
+            <column name="ro_date" type="date"/>
+            <column name="ro_tdd" type="date"/>
+            <column name="material_id" type="string"/>
+            <column name="mat_desc" type="string"/>
+            <column name="del_qty" type="numeric"/>
+            <column name="value" type="numeric"/>
+            <column name="storage_loc" type="numeric"/>
+            <column name="wh_id" type="numeric"/>
+            <column name="wh_desc" type="string"/>
+            <column name="cons_id" type="string"/>
+            <column name="cons_name" type="string"/>
+            <column name="auth_person" type="string"/>
+            <column name="so_id" type="string"/>
+            <column name="po_id" type="string"/>
+            <column name="delivery" type="numeric"/>
+            <column name="jhi_grant" type="string"/>
+            <column name="wbs" type="string"/>
+            <column name="pick_status" type="string"/>
+            <column name="to_number" type="string"/>
+            <column name="trspt_status" type="string"/>
+            <column name="wayb_id" type="numeric"/>
+            <column name="trsptr_name" type="string"/>
+            <column name="shipmt_ed" type="date"/>
+            <column name="gds_status" type="string"/>
+            <column name="gds_date" type="date"/>
+            <column name="ro_subitem" type="numeric"/>
+            <column name="ro_type" type="string"/>
+            <column name="unit" type="string"/>
+            <column name="moving_price" type="numeric"/>
+            <column name="plant_id" type="numeric"/>
+            <column name="plant_name" type="string"/>
+            <column name="storage_locp" type="string"/>
+            <column name="dwh_id" type="string"/>
+            <column name="dwh_desc" type="string"/>
+            <column name="ship_party" type="string"/>
+            <column name="trspt_means" type="string"/>
+            <column name="prog_officer" type="string"/>
+            <column name="so_items" type="numeric"/>
+            <column name="po_items" type="numeric"/>
+            <column name="trsptr_id" type="string"/>
+            <column name="gds_id" type="string"/>
+            <column name="gds_item" type="numeric"/>
+            <column name="batch" type="string"/>
+            <column name="bb_date" type="date"/>
+            <column name="planning_date" type="date"/>
+            <column name="checkin_date" type="date"/>
+            <column name="shipment_sdate" type="date"/>
+            <column name="loading_sdate" type="date"/>
+            <column name="loading_edate" type="date"/>
+            <column name="ashipment_sdate" type="date"/>
+            <column name="shipment_cdate" type="date"/>
+            <column name="weight" type="numeric"/>
+            <column name="volume" type="numeric"/>
+            <column name="section" type="string"/>
+            <column name="commodity_group" type="string"/>
+            <column name="region" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

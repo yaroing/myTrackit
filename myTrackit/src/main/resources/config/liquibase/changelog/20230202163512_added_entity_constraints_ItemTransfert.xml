@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity ItemTransfert.
+    -->
+    <changeSet id="20230202163512-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="transfert_id"
+                                 baseTableName="item_transfert"
+                                 constraintName="fk_item_transfert__transfert_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="transfert"/>
+    </changeSet>
+</databaseChangeLog>

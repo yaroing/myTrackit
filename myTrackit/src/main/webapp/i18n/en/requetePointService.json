@@ -1,0 +1,32 @@
+{
+  "myTrackitApp": {
+    "requetePointService": {
+      "home": {
+        "title": "Requete Point Services",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Requete Point Service",
+        "createOrEditLabel": "Create or edit a Requete Point Service",
+        "notFound": "No Requete Point Services found"
+      },
+      "created": "A new Requete Point Service is created with identifier {{ param }}",
+      "updated": "A Requete Point Service is updated with identifier {{ param }}",
+      "deleted": "A Requete Point Service is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Requete Point Service {{ id }}?"
+      },
+      "detail": {
+        "title": "Requete Point Service"
+      },
+      "id": "ID",
+      "stockDisponible": "Stock Disponible",
+      "quantDem": "Quant Dem",
+      "quantTrs": "Quant Trs",
+      "quantRec": "Quant Rec",
+      "reqTraitee": "Req Traitee",
+      "dateReq": "Date Req",
+      "dateRec": "Date Rec",
+      "dateTransfert": "Date Transfert",
+      "pointService": "Point Service"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "applications": ["myTrackit", "myTransfert"],
+  "changelogDate": "20230202162612",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "mission",
+  "fields": [
+    {
+      "fieldName": "dateMission",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateDebut",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateFin",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "rapportMission",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "debutMission",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "finMission",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "field10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fin",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Mission",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "itemVerifie",
+      "otherEntityRelationshipName": "mission",
+      "relationshipName": "itemVerifie",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

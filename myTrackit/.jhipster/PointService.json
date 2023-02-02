@@ -1,0 +1,56 @@
+{
+  "applications": ["myTrackit", "myPointService"],
+  "changelogDate": "20230202162212",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "point_service",
+  "fields": [
+    {
+      "fieldName": "nomPos",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "posLon",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "posLat",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "posContact",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "posGsm",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PointService",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "monitoring",
+      "otherEntityRelationshipName": "pointService",
+      "relationshipName": "monitoring",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "requetePointService",
+      "otherEntityRelationshipName": "pointService",
+      "relationshipName": "requetePointService",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "stockPointService",
+      "otherEntityRelationshipName": "pointService",
+      "relationshipName": "stockPointService",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

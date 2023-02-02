@@ -1,0 +1,27 @@
+{
+  "myTrackitApp": {
+    "pointFocalPointService": {
+      "home": {
+        "title": "Point Focal Point Services",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Point Focal Point Service",
+        "createOrEditLabel": "Create or edit a Point Focal Point Service",
+        "notFound": "No Point Focal Point Services found"
+      },
+      "created": "A new Point Focal Point Service is created with identifier {{ param }}",
+      "updated": "A Point Focal Point Service is updated with identifier {{ param }}",
+      "deleted": "A Point Focal Point Service is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Point Focal Point Service {{ id }}?"
+      },
+      "detail": {
+        "title": "Point Focal Point Service"
+      },
+      "id": "ID",
+      "nomPf": "Nom Pf",
+      "fonctionPf": "Fonction Pf",
+      "gsmPf": "Gsm Pf",
+      "emailPf": "Email Pf"
+    }
+  }
+}

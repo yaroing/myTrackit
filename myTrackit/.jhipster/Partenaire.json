@@ -1,0 +1,37 @@
+{
+  "applications": ["myTrackit", "myPartenaire"],
+  "changelogDate": "20230202162812",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "partenaire",
+  "fields": [
+    {
+      "fieldName": "nomPartenaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autreNom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "logPhone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailPartenaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "locPartenaire",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Partenaire",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

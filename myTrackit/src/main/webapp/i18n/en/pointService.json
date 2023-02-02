@@ -1,0 +1,31 @@
+{
+  "myTrackitApp": {
+    "pointService": {
+      "home": {
+        "title": "Point Services",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Point Service",
+        "createOrEditLabel": "Create or edit a Point Service",
+        "notFound": "No Point Services found"
+      },
+      "created": "A new Point Service is created with identifier {{ param }}",
+      "updated": "A Point Service is updated with identifier {{ param }}",
+      "deleted": "A Point Service is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Point Service {{ id }}?"
+      },
+      "detail": {
+        "title": "Point Service"
+      },
+      "id": "ID",
+      "nomPos": "Nom Pos",
+      "posLon": "Pos Lon",
+      "posLat": "Pos Lat",
+      "posContact": "Pos Contact",
+      "posGsm": "Pos Gsm",
+      "monitoring": "Monitoring",
+      "requetePointService": "Requete Point Service",
+      "stockPointService": "Stock Point Service"
+    }
+  }
+}

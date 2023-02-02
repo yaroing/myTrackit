@@ -1,0 +1,41 @@
+{
+  "applications": ["myTrackit", "myTransfert"],
+  "changelogDate": "20230202161612",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "staff",
+  "fields": [
+    {
+      "fieldName": "staffFname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "staffLname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "staffTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "staffName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "staffEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "staffPhone",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Staff",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

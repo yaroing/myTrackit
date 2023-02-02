@@ -1,0 +1,27 @@
+{
+  "myTrackitApp": {
+    "pointFocalPartenaire": {
+      "home": {
+        "title": "Point Focal Partenaires",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Point Focal Partenaire",
+        "createOrEditLabel": "Create or edit a Point Focal Partenaire",
+        "notFound": "No Point Focal Partenaires found"
+      },
+      "created": "A new Point Focal Partenaire is created with identifier {{ param }}",
+      "updated": "A Point Focal Partenaire is updated with identifier {{ param }}",
+      "deleted": "A Point Focal Partenaire is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Point Focal Partenaire {{ id }}?"
+      },
+      "detail": {
+        "title": "Point Focal Partenaire"
+      },
+      "id": "ID",
+      "nomPf": "Nom Pf",
+      "fonctionPf": "Fonction Pf",
+      "gsmPf": "Gsm Pf",
+      "emailPf": "Email Pf"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "applications": ["myTrackit", "myPointService"],
+  "changelogDate": "20230202162112",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "stock_point_service",
+  "fields": [
+    {
+      "fieldName": "stockAnnee",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stockMois",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "entreeMois",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "sortieMois",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "stockFinmois",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "stockDebut",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "StockPointService",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "pointService",
+      "otherEntityRelationshipName": "stockPointService",
+      "relationshipName": "pointService",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

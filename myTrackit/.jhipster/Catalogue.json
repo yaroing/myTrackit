@@ -1,0 +1,29 @@
+{
+  "applications": ["myTrackit", "myCoreService"],
+  "changelogDate": "20230202163412",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "catalogue",
+  "fields": [
+    {
+      "fieldName": "materialCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "materialDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "materialGroup",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Catalogue",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

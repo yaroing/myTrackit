@@ -1,0 +1,35 @@
+{
+  "applications": ["myTrackit", "myTransfert"],
+  "changelogDate": "20230202162013",
+  "clientRootFolder": "myTransfert",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "transporteur",
+  "fields": [
+    {
+      "fieldName": "nomTransporteur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nomDirecteur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneTransporteur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailTransporteur",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "myTransfert",
+  "name": "Transporteur",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

@@ -1,0 +1,26 @@
+{
+  "myTrackitApp": {
+    "suiviMission": {
+      "home": {
+        "title": "Suivi Missions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Suivi Mission",
+        "createOrEditLabel": "Create or edit a Suivi Mission",
+        "notFound": "No Suivi Missions found"
+      },
+      "created": "A new Suivi Mission is created with identifier {{ param }}",
+      "updated": "A Suivi Mission is updated with identifier {{ param }}",
+      "deleted": "A Suivi Mission is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Suivi Mission {{ id }}?"
+      },
+      "detail": {
+        "title": "Suivi Mission"
+      },
+      "id": "ID",
+      "problemeConstate": "Probleme Constate",
+      "actionRecommandee": "Action Recommandee",
+      "dateEcheance": "Date Echeance"
+    }
+  }
+}

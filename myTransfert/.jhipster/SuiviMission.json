@@ -1,0 +1,33 @@
+{
+  "applications": ["myTrackit", "myTransfert"],
+  "changelogDate": "20230202161613",
+  "clientRootFolder": "myTransfert",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "suivi_mission",
+  "fields": [
+    {
+      "fieldName": "problemeConstate",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "actionRecommandee",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "dateEcheance",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "myTransfert",
+  "name": "SuiviMission",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

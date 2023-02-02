@@ -1,0 +1,23 @@
+{
+  "applications": ["myTrackit", "myCoreService"],
+  "changelogDate": "20230202161513",
+  "clientRootFolder": "myCoreService",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "location",
+  "fields": [
+    {
+      "fieldName": "region",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "myCoreService",
+  "name": "Location",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

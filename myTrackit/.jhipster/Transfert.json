@@ -1,0 +1,46 @@
+{
+  "applications": ["myTrackit", "myTransfert"],
+  "changelogDate": "20230202161412",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "transfert",
+  "fields": [
+    {
+      "fieldName": "dateExp",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "nomChauffeur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateRec",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "cphone",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Transfert",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "action",
+      "otherEntityRelationshipName": "transfert",
+      "relationshipName": "action",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "itemTransfert",
+      "otherEntityRelationshipName": "transfert",
+      "relationshipName": "itemTransfert",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
