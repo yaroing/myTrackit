@@ -1,0 +1,46 @@
+{
+  "name": "Partenaire",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nomPartenaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autreNom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "logPhone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailPartenaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "locPartenaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "regionId",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "partenaire",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myPartenaire"
+  ]
+}

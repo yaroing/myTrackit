@@ -1,0 +1,26 @@
+{
+  "name": "Location",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "region",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "location",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myCoreService"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "StatutRecommandation",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "statutRecom",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "statut_recommandation",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myCoreService"
+  ]
+}

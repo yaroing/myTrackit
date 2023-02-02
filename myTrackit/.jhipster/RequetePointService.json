@@ -1,0 +1,69 @@
+{
+  "name": "RequetePointService",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "posId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "catalogueId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stockDisponible",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantDem",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantTrs",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantRec",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "reqTraitee",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dateReq",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateRec",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateTransfert",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "pointService",
+      "otherEntityRelationshipName": "requetePointService",
+      "relationshipName": "pointService"
+    }
+  ],
+  "entityTableName": "requete_point_service",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myPointService"
+  ]
+}

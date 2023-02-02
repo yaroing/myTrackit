@@ -1,0 +1,54 @@
+{
+  "name": "DetailsRequete",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "reqpartId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "catalogueId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quantiteDemandee",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantiteApprouvee",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantiteRecue",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "itemObs",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "requetePartenaire",
+      "otherEntityRelationshipName": "detailsRequete",
+      "relationshipName": "requetePartenaire"
+    }
+  ],
+  "entityTableName": "details_requete",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myPartenaire"
+  ]
+}
