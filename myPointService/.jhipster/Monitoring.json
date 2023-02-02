@@ -1,0 +1,110 @@
+{
+  "applications": ["myTrackit", "myPointService"],
+  "changelogDate": "20230202155025",
+  "clientRootFolder": "myPointService",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "monitoring",
+  "fields": [
+    {
+      "fieldName": "pointOsId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "atpeAnnee",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "atpeMois",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "atpeStock",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "atpeDispo",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "atpeEndom",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "atpePerime",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "atpeRupture",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "atpeNjour",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "atpeMagasin",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "atpePalette",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "atpePosition",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "atpeHauteur",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "atpePersonnel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "atpeAdmission",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "atpeSortie",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "atpeGueris",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "atpeAbandon",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "atpePoids",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "atpeTrasnsfert",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "atpeParent",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "myPointService",
+  "name": "Monitoring",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "pointService",
+      "otherEntityRelationshipName": "monitoring",
+      "relationshipName": "pointService",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

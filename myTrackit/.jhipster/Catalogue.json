@@ -1,0 +1,26 @@
+{
+  "name": "Catalogue",
+  "fields": [
+    {
+      "fieldName": "materialDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "materialGroup",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "catalogue",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myCoreService"
+  ]
+}

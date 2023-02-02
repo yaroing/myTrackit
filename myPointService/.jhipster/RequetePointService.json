@@ -1,0 +1,66 @@
+{
+  "applications": ["myTrackit", "myPointService"],
+  "changelogDate": "20230202155125",
+  "clientRootFolder": "myPointService",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "requete_point_service",
+  "fields": [
+    {
+      "fieldName": "posId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "catalogueId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stockDisponible",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantDem",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantTrs",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantRec",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "reqTraitee",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dateReq",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateRec",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateTransfert",
+      "fieldType": "Instant"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "myPointService",
+  "name": "RequetePointService",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "pointService",
+      "otherEntityRelationshipName": "requetePointService",
+      "relationshipName": "pointService",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,78 @@
+{
+  "applications": ["myTrackit", "myTransfert"],
+  "changelogDate": "20230202155425",
+  "clientRootFolder": "myTransfert",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "item_transfert",
+  "fields": [
+    {
+      "fieldName": "waybId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "roId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "roDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "materialId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "matDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "unit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "delQty",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "value",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "batch",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bbDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "weight",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "volume",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "recQty",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "myTransfert",
+  "name": "ItemTransfert",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "transfert",
+      "otherEntityRelationshipName": "itemTransfert",
+      "relationshipName": "transfert",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

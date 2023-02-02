@@ -1,0 +1,46 @@
+{
+  "name": "Action",
+  "fields": [
+    {
+      "fieldName": "transfertId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dateAction",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "typeActionId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "rapportAction",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "staffId",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "transfert",
+      "otherEntityRelationshipName": "action",
+      "relationshipName": "transfert"
+    }
+  ],
+  "entityTableName": "action",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myTransfert"
+  ]
+}

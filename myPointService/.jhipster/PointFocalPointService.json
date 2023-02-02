@@ -1,0 +1,39 @@
+{
+  "applications": ["myTrackit", "myPointService"],
+  "changelogDate": "20230202154725",
+  "clientRootFolder": "myPointService",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "point_focal_point_service",
+  "fields": [
+    {
+      "fieldName": "pointOsId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nomPf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fonctionPf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gsmPf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailPf",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "myPointService",
+  "name": "PointFocalPointService",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

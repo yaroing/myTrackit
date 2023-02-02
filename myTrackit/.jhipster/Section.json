@@ -1,0 +1,35 @@
+{
+  "name": "Section",
+  "fields": [
+    {
+      "fieldName": "sectionNom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chefSection",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailChef",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneChef",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "section",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myPointService",
+    "myCoreService"
+  ]
+}

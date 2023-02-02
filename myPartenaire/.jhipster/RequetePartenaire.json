@@ -1,0 +1,51 @@
+{
+  "name": "RequetePartenaire",
+  "fields": [
+    {
+      "fieldName": "partenaireId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sectionId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "requeteDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "fichierAtache",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "requeteObs",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "reqTraitee",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "detailsRequete",
+      "otherEntityRelationshipName": "requetePartenaire",
+      "relationshipName": "detailsRequete"
+    }
+  ],
+  "entityTableName": "requete_partenaire",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myPartenaire"
+  ]
+}

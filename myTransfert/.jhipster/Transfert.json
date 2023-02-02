@@ -1,0 +1,68 @@
+{
+  "applications": ["myTrackit", "myTransfert"],
+  "changelogDate": "20230202154725",
+  "clientRootFolder": "myTransfert",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "transfert",
+  "fields": [
+    {
+      "fieldName": "dateExp",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "sectionId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "staffId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "partenaireId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transporteurId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nomChauffeur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateRec",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "statutRecId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cphone",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "myTransfert",
+  "name": "Transfert",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "action",
+      "otherEntityRelationshipName": "transfert",
+      "relationshipName": "action",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "itemTransfert",
+      "otherEntityRelationshipName": "transfert",
+      "relationshipName": "itemTransfert",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
