@@ -5,7 +5,7 @@ application {
     packageName com.yarolab.mytrackit,
     authenticationType jwt,
     prodDatabaseType mysql,
-    clientFramework angularX
+    clientFramework react
   }
   entities *
 }
@@ -327,20 +327,7 @@ relationship OneToMany {
 PointService to Monitoring
 PointService to RequetePointService
 PointService to StockPointService
-PointService to PointFocalPointService
-Catalogue to RequetePointService
-Catalogue to StockPointService
-Catalogue to DetailsRequete
-Catalogue to StockPartenaire
 RequetePartenaire to DetailsRequete
-Section to Mission
-Section to Transfert
-Section to RequetePartenaire
-Section to Staff
-Partenaire to Transfert
-Partenaire to RequetePartenaire
-Partenaire to PointFocalPartenaire
-Transporteur to Transfert
 Transfert to Action
 Transfert to ItemTransfert
 Mission to ItemVerifie
