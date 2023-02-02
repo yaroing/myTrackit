@@ -1,0 +1,34 @@
+{
+  "name": "Transporteur",
+  "fields": [
+    {
+      "fieldName": "nomTransporteur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nomDirecteur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneTransporteur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailTransporteur",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "transporteur",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myTransfert"
+  ]
+}

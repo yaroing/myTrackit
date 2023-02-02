@@ -1,0 +1,4 @@
+/**
+ * Spring Framework configuration files.
+ */
+package com.yarolab.mytrackit.pointservice.config;

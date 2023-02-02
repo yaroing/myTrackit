@@ -1,0 +1,74 @@
+{
+  "name": "Mission",
+  "fields": [
+    {
+      "fieldName": "dateMission",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "sectionId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "staffId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "regionId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "partenaireId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateDebut",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateFin",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "rapportMission",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "debutMission",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "finMission",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "field10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fin",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "itemVerifie",
+      "otherEntityRelationshipName": "mission",
+      "relationshipName": "itemVerifie"
+    }
+  ],
+  "entityTableName": "mission",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myTransfert"
+  ]
+}

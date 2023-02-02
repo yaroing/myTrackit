@@ -1,0 +1,42 @@
+{
+  "name": "PointFocalPartenaire",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "partenaireId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nomPf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fonctionPf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gsmPf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailPf",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "point_focal_partenaire",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myPartenaire"
+  ]
+}

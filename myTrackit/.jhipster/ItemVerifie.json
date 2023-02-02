@@ -1,0 +1,53 @@
+{
+  "name": "ItemVerifie",
+  "fields": [
+    {
+      "fieldName": "missionId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "catalogueId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quantiteTransfert",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantiteRecu",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantiteUtilisee",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantiteDisponible",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantiteEcart",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "mission",
+      "otherEntityRelationshipName": "itemVerifie",
+      "relationshipName": "mission"
+    }
+  ],
+  "entityTableName": "item_verifie",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "myTrackit",
+    "myTransfert"
+  ]
+}
