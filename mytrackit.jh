@@ -1,0 +1,420 @@
+application {
+  config {
+    baseName myTrackit,
+    applicationType gateway,
+    packageName com.yarolab.mytrackit,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework angularX
+  }
+  entities *
+}
+
+application {
+  config {
+    baseName myPointService,
+    applicationType microservice,
+    packageName com.yarolab.mytrackit.pointservice,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities PointFocalPointService, PointService, Section, Monitoring, RequetePointService, StockPointService
+}
+
+application {
+  config {
+    baseName myPartenaire,
+    applicationType microservice,
+    packageName com.yarolab.mytrackit.partenaire,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities Partenaire, PointFocalPartenaire, DetailsRequete, RequetePartenaire, StockPartenaire
+}
+
+application {
+  config {
+    baseName myTransfert,
+    applicationType microservice,
+    packageName com.yarolab.mytrackit.transfert,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities Staff, Transporteur, Action, ItemTransfert, ItemVerifie, Mission, SuiviMission, Transfert
+}
+
+application {
+  config {
+    baseName myCoreService,
+    applicationType microservice,
+    packageName com.yarolab.mytrackit.coreservice,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities Section, Catalogue, Location, StatutRecommandation, Zrosts
+}
+
+
+entity Action {
+
+id Integer
+transfertId Integer
+dateAction Instant
+typeActionId Integer
+rapportAction TextBlob
+staffId Integer
+
+}
+entity Catalogue {
+
+id String
+materialDesc String
+materialGroup String
+
+}
+entity DetailsRequete {
+
+id Integer
+reqpartId Integer
+catalogueId String
+quantiteDemandee Double
+quantiteApprouvee Double
+quantiteRecue Double
+itemObs TextBlob
+
+}
+entity ItemVerifie {
+
+id Integer
+missionId Integer
+catalogueId String
+quantiteTransfert Double
+quantiteRecu Double
+quantiteUtilisee Double
+quantiteDisponible Double
+quantiteEcart Double
+
+}
+entity ItemTransfert {
+
+id Integer
+waybId Integer
+roId Integer
+roDate Instant
+materialId String
+matDesc String
+unit String
+delQty Double
+value Double
+batch String
+bbDate Instant
+weight Double
+volume Double
+recQty Double
+
+}
+entity Mission {
+
+id Integer
+dateMission Instant
+sectionId Integer
+staffId Integer
+regionId Integer
+partenaireId String
+dateDebut Instant
+dateFin Instant
+rapportMission AnyBlob 
+debutMission Instant
+finMission Instant
+field10 String
+fin String
+
+}
+entity Monitoring {
+
+id Integer
+pointOsId Integer
+atpeAnnee Integer
+atpeMois Integer
+atpeStock String
+atpeDispo Double
+atpeEndom Double
+atpePerime Double
+atpeRupture String
+atpeNjour Integer
+atpeMagasin String
+atpePalette String
+atpePosition String
+atpeHauteur Double
+atpePersonnel String
+atpeAdmission Integer
+atpeSortie Integer
+atpeGueris Integer
+atpeAbandon Integer
+atpePoids Integer
+atpeTrasnsfert Integer
+atpeParent Integer
+
+}
+entity Partenaire {
+
+id String
+nomPartenaire String
+autreNom String
+logPhone String
+emailPartenaire String
+locPartenaire String
+regionId Integer
+
+}
+entity PointFocalPartenaire {
+
+id Integer
+partenaireId String
+nomPf String
+fonctionPf String
+gsmPf String
+emailPf String
+
+}
+entity PointFocalPointService {
+
+id Integer
+pointOsId Integer
+nomPf String
+fonctionPf String
+gsmPf String
+emailPf String
+
+}
+entity PointService {
+
+id Integer
+partenaireId String
+nomPos String
+posLon Double
+posLat Double
+posContact String
+posGsm String
+
+}
+entity Location {
+
+id Integer
+region String
+
+}
+entity RequetePartenaire {
+
+id Integer
+partenaireId String
+sectionId Integer
+requeteDate Instant
+fichierAtache AnyBlob 
+requeteObs TextBlob
+reqTraitee Integer
+
+}
+entity RequetePointService {
+
+id Integer
+posId Integer
+catalogueId String
+stockDisponible Double
+quantDem Double
+quantTrs Double
+quantRec Double
+reqTraitee Integer
+dateReq Instant
+dateRec Instant
+dateTransfert Instant
+
+}
+entity Section {
+
+id Integer
+sectionNom String
+chefSection String
+emailChef String
+phoneChef String
+
+}
+entity Staff {
+
+id Integer
+staffFname String
+staffLname String
+staffTitle String
+staffName String
+staffEmail String
+staffPhone String
+sectionId Integer
+
+}
+entity StatutReception {
+
+id Integer
+statutRecord String
+
+}
+entity StatutRecommandation {
+
+id Integer
+statutRecom String
+
+}
+entity StockPartenaire {
+
+id Integer
+partenaireId String
+stockAnnee String
+stockMois String
+catalogueId String
+entreeMois Double
+sortieMois Double
+stockFinmois Double
+stockDebut Double
+
+}
+entity StockPointService {
+
+id Integer
+posId Integer
+stockAnnee String
+stockMois String
+catalogueId String
+entreeMois Double
+sortieMois Double
+stockFinmois Double
+stockDebut Double
+
+}
+entity SuiviMission {
+
+id Integer
+missionEumId Integer
+problemeConstate TextBlob
+actionRecommandee TextBlob
+staffId Integer
+dateEcheance String
+statutRecomId Integer
+
+}
+entity Transfert {
+
+id Integer
+dateExp Instant
+sectionId Integer
+staffId Integer
+partenaireId String
+transporteurId String
+nomChauffeur String
+dateRec Instant
+statutRecId Integer
+cphone String
+
+}
+entity Transporteur {
+
+id String
+nomTransporteur String
+nomDirecteur String
+phoneTransporteur String
+emailTransporteur String
+
+}
+entity TypeAction {
+
+id Integer
+type String
+
+}
+entity Zrosts {
+
+zrostsId Double
+roId Integer
+roItem Double
+roDate Instant
+roTdd Instant
+materialId String
+matDesc String
+delQty Double
+value Double
+storageLoc Double
+whId Double
+whDesc String
+consId String
+consName String
+authPerson String
+soId String
+poId String
+delivery Double
+grant String
+wbs String
+pickStatus String
+toNumber String
+trsptStatus String
+waybId Integer
+trsptrName String
+shipmtEd Instant
+gdsStatus String
+gdsDate Instant
+roSubitem Double
+roType String
+unit String
+movingPrice Double
+plantId Double
+plantName String
+storageLocp String
+dwhId String
+dwhDesc String
+shipParty String
+trsptMeans String
+progOfficer String
+soItems Double
+poItems Double
+trsptrId String
+gdsId String
+gdsItem Double
+batch String
+bbDate Instant
+planningDate Instant
+checkinDate Instant
+shipmentSdate Instant
+loadingSdate Instant
+loadingEdate Instant
+ashipmentSdate Instant
+shipmentCdate Instant
+weight Double
+volume Double
+section String
+commodityGroup String
+region String
+}
+
+
+relationship OneToMany {
+PointService to Monitoring
+PointService to RequetePointService
+PointService to StockPointService
+PointService to PointFocalPointService
+Catalogue to RequetePointService
+Catalogue to StockPointService
+Catalogue to DetailsRequete
+Catalogue to StockPartenaire
+RequetePartenaire to DetailsRequete
+Section to Mission
+Section to Transfert
+Section to RequetePartenaire
+Section to Staff
+Partenaire to Transfert
+Partenaire to RequetePartenaire
+Partenaire to PointFocalPartenaire
+Transporteur to Transfert
+Transfert to Action
+Transfert to ItemTransfert
+Mission to ItemVerifie
+  
+}
+
+
