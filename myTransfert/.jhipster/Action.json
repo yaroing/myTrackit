@@ -1,0 +1,35 @@
+{
+  "applications": ["myTrackit", "myTransfert"],
+  "changelogDate": "20230202161713",
+  "clientRootFolder": "myTransfert",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "action",
+  "fields": [
+    {
+      "fieldName": "dateAction",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "rapportAction",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "myTransfert",
+  "name": "Action",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "transfert",
+      "otherEntityRelationshipName": "action",
+      "relationshipName": "transfert",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

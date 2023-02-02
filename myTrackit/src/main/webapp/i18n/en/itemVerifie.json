@@ -1,0 +1,29 @@
+{
+  "myTrackitApp": {
+    "itemVerifie": {
+      "home": {
+        "title": "Item Verifies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Item Verifie",
+        "createOrEditLabel": "Create or edit a Item Verifie",
+        "notFound": "No Item Verifies found"
+      },
+      "created": "A new Item Verifie is created with identifier {{ param }}",
+      "updated": "A Item Verifie is updated with identifier {{ param }}",
+      "deleted": "A Item Verifie is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Item Verifie {{ id }}?"
+      },
+      "detail": {
+        "title": "Item Verifie"
+      },
+      "id": "ID",
+      "quantiteTransfert": "Quantite Transfert",
+      "quantiteRecu": "Quantite Recu",
+      "quantiteUtilisee": "Quantite Utilisee",
+      "quantiteDisponible": "Quantite Disponible",
+      "quantiteEcart": "Quantite Ecart",
+      "mission": "Mission"
+    }
+  }
+}

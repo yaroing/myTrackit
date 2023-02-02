@@ -1,0 +1,21 @@
+{
+  "applications": ["myTrackit"],
+  "changelogDate": "20230202161512",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "type_action",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "TypeAction",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

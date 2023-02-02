@@ -1,0 +1,29 @@
+{
+  "myTrackitApp": {
+    "stockPartenaire": {
+      "home": {
+        "title": "Stock Partenaires",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Stock Partenaire",
+        "createOrEditLabel": "Create or edit a Stock Partenaire",
+        "notFound": "No Stock Partenaires found"
+      },
+      "created": "A new Stock Partenaire is created with identifier {{ param }}",
+      "updated": "A Stock Partenaire is updated with identifier {{ param }}",
+      "deleted": "A Stock Partenaire is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Stock Partenaire {{ id }}?"
+      },
+      "detail": {
+        "title": "Stock Partenaire"
+      },
+      "id": "ID",
+      "stockAnnee": "Stock Annee",
+      "stockMois": "Stock Mois",
+      "entreeMois": "Entree Mois",
+      "sortieMois": "Sortie Mois",
+      "stockFinmois": "Stock Finmois",
+      "stockDebut": "Stock Debut"
+    }
+  }
+}

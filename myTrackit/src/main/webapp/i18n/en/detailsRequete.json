@@ -1,0 +1,28 @@
+{
+  "myTrackitApp": {
+    "detailsRequete": {
+      "home": {
+        "title": "Details Requetes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Details Requete",
+        "createOrEditLabel": "Create or edit a Details Requete",
+        "notFound": "No Details Requetes found"
+      },
+      "created": "A new Details Requete is created with identifier {{ param }}",
+      "updated": "A Details Requete is updated with identifier {{ param }}",
+      "deleted": "A Details Requete is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Details Requete {{ id }}?"
+      },
+      "detail": {
+        "title": "Details Requete"
+      },
+      "id": "ID",
+      "quantiteDemandee": "Quantite Demandee",
+      "quantiteApprouvee": "Quantite Approuvee",
+      "quantiteRecue": "Quantite Recue",
+      "itemObs": "Item Obs",
+      "requetePartenaire": "Requete Partenaire"
+    }
+  }
+}

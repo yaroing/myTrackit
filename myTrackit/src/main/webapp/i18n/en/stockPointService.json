@@ -1,0 +1,30 @@
+{
+  "myTrackitApp": {
+    "stockPointService": {
+      "home": {
+        "title": "Stock Point Services",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Stock Point Service",
+        "createOrEditLabel": "Create or edit a Stock Point Service",
+        "notFound": "No Stock Point Services found"
+      },
+      "created": "A new Stock Point Service is created with identifier {{ param }}",
+      "updated": "A Stock Point Service is updated with identifier {{ param }}",
+      "deleted": "A Stock Point Service is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Stock Point Service {{ id }}?"
+      },
+      "detail": {
+        "title": "Stock Point Service"
+      },
+      "id": "ID",
+      "stockAnnee": "Stock Annee",
+      "stockMois": "Stock Mois",
+      "entreeMois": "Entree Mois",
+      "sortieMois": "Sortie Mois",
+      "stockFinmois": "Stock Finmois",
+      "stockDebut": "Stock Debut",
+      "pointService": "Point Service"
+    }
+  }
+}

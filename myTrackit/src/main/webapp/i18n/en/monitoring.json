@@ -1,0 +1,44 @@
+{
+  "myTrackitApp": {
+    "monitoring": {
+      "home": {
+        "title": "Monitorings",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Monitoring",
+        "createOrEditLabel": "Create or edit a Monitoring",
+        "notFound": "No Monitorings found"
+      },
+      "created": "A new Monitoring is created with identifier {{ param }}",
+      "updated": "A Monitoring is updated with identifier {{ param }}",
+      "deleted": "A Monitoring is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Monitoring {{ id }}?"
+      },
+      "detail": {
+        "title": "Monitoring"
+      },
+      "id": "ID",
+      "atpeAnnee": "Atpe Annee",
+      "atpeMois": "Atpe Mois",
+      "atpeStock": "Atpe Stock",
+      "atpeDispo": "Atpe Dispo",
+      "atpeEndom": "Atpe Endom",
+      "atpePerime": "Atpe Perime",
+      "atpeRupture": "Atpe Rupture",
+      "atpeNjour": "Atpe Njour",
+      "atpeMagasin": "Atpe Magasin",
+      "atpePalette": "Atpe Palette",
+      "atpePosition": "Atpe Position",
+      "atpeHauteur": "Atpe Hauteur",
+      "atpePersonnel": "Atpe Personnel",
+      "atpeAdmission": "Atpe Admission",
+      "atpeSortie": "Atpe Sortie",
+      "atpeGueris": "Atpe Gueris",
+      "atpeAbandon": "Atpe Abandon",
+      "atpePoids": "Atpe Poids",
+      "atpeTrasnsfert": "Atpe Trasnsfert",
+      "atpeParent": "Atpe Parent",
+      "pointService": "Point Service"
+    }
+  }
+}

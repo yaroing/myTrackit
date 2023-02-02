@@ -1,0 +1,35 @@
+{
+  "applications": ["myTrackit", "myPointService", "myCoreService"],
+  "changelogDate": "20230202161613",
+  "clientRootFolder": "myCoreService",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "section",
+  "fields": [
+    {
+      "fieldName": "sectionNom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chefSection",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailChef",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneChef",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "myCoreService",
+  "name": "Section",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

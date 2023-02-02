@@ -1,0 +1,24 @@
+{
+  "myTrackitApp": {
+    "typeAction": {
+      "home": {
+        "title": "Type Actions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Type Action",
+        "createOrEditLabel": "Create or edit a Type Action",
+        "notFound": "No Type Actions found"
+      },
+      "created": "A new Type Action is created with identifier {{ param }}",
+      "updated": "A Type Action is updated with identifier {{ param }}",
+      "deleted": "A Type Action is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Type Action {{ id }}?"
+      },
+      "detail": {
+        "title": "Type Action"
+      },
+      "id": "ID",
+      "type": "Type"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "applications": ["myTrackit", "myPartenaire"],
+  "changelogDate": "20230202162512",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "stock_partenaire",
+  "fields": [
+    {
+      "fieldName": "stockAnnee",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stockMois",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "entreeMois",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "sortieMois",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "stockFinmois",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "stockDebut",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "StockPartenaire",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

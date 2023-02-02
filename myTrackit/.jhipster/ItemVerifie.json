@@ -1,0 +1,44 @@
+{
+  "applications": ["myTrackit", "myTransfert"],
+  "changelogDate": "20230202162912",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "item_verifie",
+  "fields": [
+    {
+      "fieldName": "quantiteTransfert",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantiteRecu",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantiteUtilisee",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantiteDisponible",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantiteEcart",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ItemVerifie",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "mission",
+      "otherEntityRelationshipName": "itemVerifie",
+      "relationshipName": "mission",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

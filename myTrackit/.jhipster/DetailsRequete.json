@@ -1,0 +1,41 @@
+{
+  "applications": ["myTrackit", "myPartenaire"],
+  "changelogDate": "20230202162712",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "details_requete",
+  "fields": [
+    {
+      "fieldName": "quantiteDemandee",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantiteApprouvee",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantiteRecue",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "itemObs",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DetailsRequete",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "requetePartenaire",
+      "otherEntityRelationshipName": "detailsRequete",
+      "relationshipName": "requetePartenaire",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,34 @@
+{
+  "myTrackitApp": {
+    "itemTransfert": {
+      "home": {
+        "title": "Item Transferts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Item Transfert",
+        "createOrEditLabel": "Create or edit a Item Transfert",
+        "notFound": "No Item Transferts found"
+      },
+      "created": "A new Item Transfert is created with identifier {{ param }}",
+      "updated": "A Item Transfert is updated with identifier {{ param }}",
+      "deleted": "A Item Transfert is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Item Transfert {{ id }}?"
+      },
+      "detail": {
+        "title": "Item Transfert"
+      },
+      "id": "ID",
+      "roDate": "Ro Date",
+      "matDesc": "Mat Desc",
+      "unit": "Unit",
+      "delQty": "Del Qty",
+      "value": "Value",
+      "batch": "Batch",
+      "bbDate": "Bb Date",
+      "weight": "Weight",
+      "volume": "Volume",
+      "recQty": "Rec Qty",
+      "transfert": "Transfert"
+    }
+  }
+}

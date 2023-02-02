@@ -1,0 +1,11 @@
+id;quantite_demandee;quantite_approuvee;quantite_recue;item_obs
+1;16231;45499;67629;../fake-data/blob/hipster.txt
+2;34595;92100;39158;../fake-data/blob/hipster.txt
+3;58637;10711;99467;../fake-data/blob/hipster.txt
+4;38136;7171;58044;../fake-data/blob/hipster.txt
+5;76313;11527;65938;../fake-data/blob/hipster.txt
+6;73583;80903;32359;../fake-data/blob/hipster.txt
+7;31403;70586;72569;../fake-data/blob/hipster.txt
+8;3899;52410;43570;../fake-data/blob/hipster.txt
+9;2719;81528;67226;../fake-data/blob/hipster.txt
+10;74839;30934;33837;../fake-data/blob/hipster.txt

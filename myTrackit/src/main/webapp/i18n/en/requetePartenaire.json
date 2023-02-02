@@ -1,0 +1,28 @@
+{
+  "myTrackitApp": {
+    "requetePartenaire": {
+      "home": {
+        "title": "Requete Partenaires",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Requete Partenaire",
+        "createOrEditLabel": "Create or edit a Requete Partenaire",
+        "notFound": "No Requete Partenaires found"
+      },
+      "created": "A new Requete Partenaire is created with identifier {{ param }}",
+      "updated": "A Requete Partenaire is updated with identifier {{ param }}",
+      "deleted": "A Requete Partenaire is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Requete Partenaire {{ id }}?"
+      },
+      "detail": {
+        "title": "Requete Partenaire"
+      },
+      "id": "ID",
+      "requeteDate": "Requete Date",
+      "fichierAtache": "Fichier Atache",
+      "requeteObs": "Requete Obs",
+      "reqTraitee": "Req Traitee",
+      "detailsRequete": "Details Requete"
+    }
+  }
+}

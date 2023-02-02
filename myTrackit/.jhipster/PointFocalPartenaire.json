@@ -1,0 +1,33 @@
+{
+  "applications": ["myTrackit", "myPartenaire"],
+  "changelogDate": "20230202163612",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "point_focal_partenaire",
+  "fields": [
+    {
+      "fieldName": "nomPf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fonctionPf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gsmPf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailPf",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PointFocalPartenaire",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
